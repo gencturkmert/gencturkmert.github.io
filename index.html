@@ -39,9 +39,9 @@
                     <img src="https://w3.bilkent.edu.tr/logo/ing-amblem.png" alt="Bilkent" class="affiliation-logo">
                     M.S. Student at Bilkent University
                 </p>
-                <p class="hero-focus">Deep Learning | Bioinformatics | Optimization</p>
+                <p class="hero-focus">Deep Learning | Computational Biology | Bioinformatics | Optimization</p>
                 <div class="hero-links">
-                    <a href="mailto:gencturkmert1@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+                    <a href="mailto:mert.gencturk@bilkent.edu.tr"><i class="fas fa-envelope"></i> Email</a>
                     <a href="https://github.com/gencturkmert" target="_blank"><i class="fab fa-github"></i> GitHub</a>
                     <a href="https://scholar.google.com/" target="_blank"><i class="fas fa-graduation-cap"></i> Scholar</a>
                     <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
@@ -66,8 +66,8 @@
                     Award 2024 for contributions to the department's internship system.
                 </p>
                 <p>
-                    My research interests span deep learning, machine learning, bioinformatics, and optimization. I have industry
-                    experience as an Algorithm Engineer at Getir, where I worked on delivery optimization and ML pipelines.
+                    My research interests span deep learning, machine learning, computational biology, bioinformatics, and optimization.
+                    I have industry experience as an Algorithm Engineer at Getir, where I worked on delivery optimization and ML pipelines.
                 </p>
             </div>
         </div>
@@ -83,11 +83,7 @@
                 <h3>ExactCN: Predicting Exact Copy Numbers on Whole Exome Sequencing Data</h3>
                 <p class="pub-authors">Erfan FarhangKia, Ahmet Arda Ceylan, <strong>Mert Gencturk</strong>, Mehmet Alper Yilmaz, Furkan Karademir, A. Ercument Cicek</p>
                 <p class="pub-abstract">
-                    ExactCN is a deep learning method for predicting exact integer copy numbers at the exon level from
-                    whole-exome sequencing (WES) data using read-depth signals. The model processes base-level WES read-depth
-                    signals through convolutional layers and Performer encoder blocks to regress predicted copy numbers.
-                    Trained on 530 WES samples from the 1000 Genomes Project, ExactCN achieves state-of-the-art performance
-                    with 32% MAE reduction, improving macro-averaged MAE from 0.91 to 0.62 and RMSE from 1.31 to 0.78.
+                    The quantification of the precise copy number variations (CNVs) is crucial to understanding the effects of gene dosage, disease severity, and therapeutic response. Although whole-exome sequencing (WES) offers a cost-effective solution for CNV detection in a clinical setting, it introduces several biases, including those related to sequence length, GC content, and the use of targeting probes. Consequently, estimating exact copy numbers remains challenging, especially for WES data. Here, we present ExactCN, a deep learning–based method for estimation of exact copy numbers from WES data per exon. The architecture integrates convolutional layers that extract local read-depth patterns with transformer encoder blocks that capture genomic context and handle sequencing noise. ExactCN is trained on WES samples from the 1000 Genomes Project, using matching WGS-based calls as semi–ground truth. In benchmarks, ExactCN improves the state-of-the-art integer CNV calling performance by reducing the macro-averaged mean absolute error (MAE) from 0.91 to 0.62 and the macro-averaged root mean squared error (RMSE) from 1.31 to 0.78. It also achieves an overall Pearson correlation of 0.669 and Spearman correlation of 0.550, improving the second-best method by 0.641 and 0.482, respectively. Furthermore, a fine-tuned and specialized version of ExactCN for aggregate CNV detection in clinically important duplicated genes SMN1/2 achieved a macro averaged F1-score of 0.657, and mean absolute error of 0.3. These results substantially improves the state-of-the-art performance and demonstrates the model's applicability to both research and clinical genomic analyses. ExactCN is available at https://github.com/ciceklab/ExactCN.
                 </p>
                 <div class="pub-links">
                     <a href="https://www.biorxiv.org/content/10.1101/2025.11.24.690086v1" target="_blank"><i class="fas fa-file-alt"></i> bioRxiv</a>
@@ -100,12 +96,7 @@
                 <h3>Bridging Local and Federated Data Normalization in Federated Learning: A Privacy-Preserving Approach</h3>
                 <p class="pub-authors"><strong>Mert Gencturk</strong>, et al.</p>
                 <p class="pub-abstract">
-                    This paper addresses data normalization challenges in federated learning (FL), where data remains distributed
-                    across multiple parties. We introduce "federated normalization," which enables collaborative exchange of
-                    normalization parameters to achieve performance comparable to pooled normalization while preserving data locality.
-                    Key contributions include systematic evaluation of federated and local normalization techniques in heterogeneous
-                    FL scenarios, a novel encryption method for calculating k-th ranked elements in federated settings, and
-                    privacy-preserving implementations using multiparty fully homomorphic encryption (MHE).
+                    Data normalization is a crucial preprocessing step for enhancing model performance and training stability. In federated learning (FL), where data remains distributed across multiple parties during collaborative model training, normalization presents unique challenges due to the decentralized and often heterogeneous nature of the data. Traditional methods rely on either independent client-side processing, i.e., local normalization, or normalizing the entire dataset before distributing it to parties, i.e., pooled normalization. Local normalization can be problematic when data distributions across parties are non-IID, while the pooled normalization approach conflicts with the decentralized nature of FL. In this paper, we explore the adaptation of widely used normalization techniques to FL and define the term federated normalization. Federated normalization simulates pooled normalization by enabling the collaborative exchange of normalization parameters among parties. Thus, it achieves performance on par with pooled normalization without compromising data locality. However, sharing normalization parameters such as the mean introduces potential privacy risks, which we further mitigate through a robust privacy-preserving solution. Our contributions include: (i) We systematically evaluate the impact of various federated and local normalization techniques in heterogeneous FL scenarios, (ii) We propose a novel homomorphically encrypted k-th ranked element (and median) calculation tailored for the federated setting, enabling secure and efficient federated normalization, (iii) We propose privacy-preserving implementations of widely used normalization techniques for FL, leveraging multiparty fully homomorphic encryption (MHE).
                 </p>
                 <div class="pub-links">
                     <a href="https://arxiv.org/abs/2511.11249" target="_blank"><i class="fas fa-file-alt"></i> arXiv</a>
@@ -134,10 +125,10 @@
 
                 <div class="exp-item">
                     <div class="exp-logo">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Getir_logo.svg/2560px-Getir_logo.svg.png" alt="Getir">
+                        <i class="fas fa-truck-fast exp-icon"></i>
                     </div>
                     <div class="exp-content">
-                        <h3>Algorithm Engineer</h3>
+                        <h3>Algorithm Engineer <span class="exp-type">Part-time</span></h3>
                         <p class="exp-company">Getir</p>
                         <p class="exp-date">Mar 2024 - Aug 2025</p>
                         <p class="exp-desc">Delivery optimization, vehicle routing problems, and ML pipeline development for ETA prediction.</p>
@@ -150,18 +141,30 @@
                     </div>
                     <div class="exp-content">
                         <h3>Undergraduate Research Assistant</h3>
-                        <p class="exp-company">Bilkent University - Multiple Labs</p>
-                        <p class="exp-date">2023 - 2025</p>
-                        <p class="exp-desc">Research on video style transfer with diffusion models and privacy-preserving federated learning.</p>
+                        <p class="exp-company">Bilkent University - Generative Deep Learning Research Lab</p>
+                        <p class="exp-date">Jul 2024 - Feb 2025</p>
+                        <p class="exp-desc">Research on video style transfer with temporal consistency using diffusion models and optical flow matching.</p>
                     </div>
                 </div>
 
                 <div class="exp-item">
                     <div class="exp-logo">
-                        <img src="https://monad.com.tr/images/monad-logo.png" alt="Monad Software">
+                        <img src="https://w3.bilkent.edu.tr/logo/ing-amblem.png" alt="Bilkent University">
                     </div>
                     <div class="exp-content">
-                        <h3>Fullstack Engineer</h3>
+                        <h3>Undergraduate Research Assistant</h3>
+                        <p class="exp-company">Bilkent University - Applied Security and Privacy Lab</p>
+                        <p class="exp-date">Sep 2023 - 2025</p>
+                        <p class="exp-desc">Research on privacy-preserving federated learning, focusing on secure data normalization techniques for healthcare applications.</p>
+                    </div>
+                </div>
+
+                <div class="exp-item">
+                    <div class="exp-logo">
+                        <i class="fas fa-building exp-icon"></i>
+                    </div>
+                    <div class="exp-content">
+                        <h3>Fullstack Engineer <span class="exp-type">Part-time</span></h3>
                         <p class="exp-company">Monad Software and Consultancy</p>
                         <p class="exp-date">Jun 2022 - Mar 2024</p>
                         <p class="exp-desc">Hospital administration software development, KIOSK systems, and healthcare integrations.</p>
@@ -283,18 +286,6 @@
                     </div>
                 </div>
             </div>
-
-            <div class="tech-category">
-                <h3>Areas of Expertise</h3>
-                <div class="expertise-tags">
-                    <span>Deep Learning</span>
-                    <span>Machine Learning</span>
-                    <span>Bioinformatics</span>
-                    <span>Optimization</span>
-                    <span>Backend Development</span>
-                    <span>Fullstack Development</span>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -305,13 +296,9 @@
             <div class="contact-content">
                 <p>Feel free to reach out for research collaborations or opportunities.</p>
                 <div class="contact-info">
-                    <a href="mailto:gencturkmert1@gmail.com">
+                    <a href="mailto:mert.gencturk@bilkent.edu.tr">
                         <i class="fas fa-envelope"></i>
-                        gencturkmert1@gmail.com
-                    </a>
-                    <a href="tel:+905355771544">
-                        <i class="fas fa-phone"></i>
-                        +90 535 577 1544
+                        mert.gencturk@bilkent.edu.tr
                     </a>
                 </div>
             </div>

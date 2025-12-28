@@ -295,11 +295,23 @@ a:hover {
     flex: 1;
 }
 
+.exp-icon {
+    font-size: 1.5rem;
+    color: var(--text-muted);
+}
+
 .exp-content h3,
 .edu-content h3 {
     font-size: 1rem;
     font-weight: 600;
     margin-bottom: 0.25rem;
+}
+
+.exp-type {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--text-muted);
+    margin-left: 0.5rem;
 }
 
 .exp-company,
