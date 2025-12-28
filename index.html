@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mert Gencturk | CS Researcher</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&family=Source+Serif+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">Mert Gencturk</a>
+            <ul class="nav-menu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#publications" class="nav-link">Publications</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#techstack" class="nav-link">Tech Stack</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Mert Gencturk</h1>
+                <p class="hero-title">Computer Science Researcher</p>
+                <p class="hero-affiliation">
+                    <img src="https://w3.bilkent.edu.tr/logo/ing-amblem.png" alt="Bilkent" class="affiliation-logo">
+                    M.S. Student at Bilkent University
+                </p>
+                <p class="hero-focus">Deep Learning | Bioinformatics | Optimization</p>
+                <div class="hero-links">
+                    <a href="mailto:gencturkmert1@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+                    <a href="https://github.com/gencturkmert" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="https://scholar.google.com/" target="_blank"><i class="fas fa-graduation-cap"></i> Scholar</a>
+                    <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About</h2>
+            <div class="about-content">
+                <p>
+                    I am a Computer Science M.S. student at <strong>Bilkent University</strong>, working as a Graduate Research Assistant
+                    at the <a href="https://ciceklab.cs.bilkent.edu.tr/" target="_blank">Cicek Lab</a>. My research focuses on developing
+                    deep learning methods for genomic variant detection from sequencing data.
+                </p>
+                <p>
+                    I completed my B.S. in Computer Science at Bilkent University with a 3.7 CGPA, ranking 20th in the department
+                    and 59th nationally among 2.5+ million students. I received a comprehensive scholarship and the Technical Service
+                    Award 2024 for contributions to the department's internship system.
+                </p>
+                <p>
+                    My research interests span deep learning, machine learning, bioinformatics, and optimization. I have industry
+                    experience as an Algorithm Engineer at Getir, where I worked on delivery optimization and ML pipelines.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="section alt-bg">
+        <div class="container">
+            <h2>Publications</h2>
+
+            <div class="publication">
+                <div class="pub-status">In Submission</div>
+                <h3>ExactCN: Predicting Exact Copy Numbers on Whole Exome Sequencing Data</h3>
+                <p class="pub-authors">Erfan FarhangKia, Ahmet Arda Ceylan, <strong>Mert Gencturk</strong>, Mehmet Alper Yilmaz, Furkan Karademir, A. Ercument Cicek</p>
+                <p class="pub-abstract">
+                    ExactCN is a deep learning method for predicting exact integer copy numbers at the exon level from
+                    whole-exome sequencing (WES) data using read-depth signals. The model processes base-level WES read-depth
+                    signals through convolutional layers and Performer encoder blocks to regress predicted copy numbers.
+                    Trained on 530 WES samples from the 1000 Genomes Project, ExactCN achieves state-of-the-art performance
+                    with 32% MAE reduction, improving macro-averaged MAE from 0.91 to 0.62 and RMSE from 1.31 to 0.78.
+                </p>
+                <div class="pub-links">
+                    <a href="https://www.biorxiv.org/content/10.1101/2025.11.24.690086v1" target="_blank"><i class="fas fa-file-alt"></i> bioRxiv</a>
+                    <a href="https://github.com/ciceklab/ExactCN" target="_blank"><i class="fab fa-github"></i> Code</a>
+                </div>
+            </div>
+
+            <div class="publication">
+                <div class="pub-status">In Submission</div>
+                <h3>Bridging Local and Federated Data Normalization in Federated Learning: A Privacy-Preserving Approach</h3>
+                <p class="pub-authors"><strong>Mert Gencturk</strong>, et al.</p>
+                <p class="pub-abstract">
+                    This paper addresses data normalization challenges in federated learning (FL), where data remains distributed
+                    across multiple parties. We introduce "federated normalization," which enables collaborative exchange of
+                    normalization parameters to achieve performance comparable to pooled normalization while preserving data locality.
+                    Key contributions include systematic evaluation of federated and local normalization techniques in heterogeneous
+                    FL scenarios, a novel encryption method for calculating k-th ranked elements in federated settings, and
+                    privacy-preserving implementations using multiparty fully homomorphic encryption (MHE).
+                </p>
+                <div class="pub-links">
+                    <a href="https://arxiv.org/abs/2511.11249" target="_blank"><i class="fas fa-file-alt"></i> arXiv</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2>Experience</h2>
+
+            <div class="experience-list">
+                <div class="exp-item">
+                    <div class="exp-logo">
+                        <img src="https://w3.bilkent.edu.tr/logo/ing-amblem.png" alt="Bilkent University">
+                    </div>
+                    <div class="exp-content">
+                        <h3>Graduate Research Assistant</h3>
+                        <p class="exp-company">Bilkent University - Cicek Lab</p>
+                        <p class="exp-date">2025 - Present</p>
+                        <p class="exp-desc">Deep learning research for genomic variant detection from whole exome sequencing data.</p>
+                    </div>
+                </div>
+
+                <div class="exp-item">
+                    <div class="exp-logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Getir_logo.svg/2560px-Getir_logo.svg.png" alt="Getir">
+                    </div>
+                    <div class="exp-content">
+                        <h3>Algorithm Engineer</h3>
+                        <p class="exp-company">Getir</p>
+                        <p class="exp-date">Mar 2024 - Aug 2025</p>
+                        <p class="exp-desc">Delivery optimization, vehicle routing problems, and ML pipeline development for ETA prediction.</p>
+                    </div>
+                </div>
+
+                <div class="exp-item">
+                    <div class="exp-logo">
+                        <img src="https://w3.bilkent.edu.tr/logo/ing-amblem.png" alt="Bilkent University">
+                    </div>
+                    <div class="exp-content">
+                        <h3>Undergraduate Research Assistant</h3>
+                        <p class="exp-company">Bilkent University - Multiple Labs</p>
+                        <p class="exp-date">2023 - 2025</p>
+                        <p class="exp-desc">Research on video style transfer with diffusion models and privacy-preserving federated learning.</p>
+                    </div>
+                </div>
+
+                <div class="exp-item">
+                    <div class="exp-logo">
+                        <img src="https://monad.com.tr/images/monad-logo.png" alt="Monad Software">
+                    </div>
+                    <div class="exp-content">
+                        <h3>Fullstack Engineer</h3>
+                        <p class="exp-company">Monad Software and Consultancy</p>
+                        <p class="exp-date">Jun 2022 - Mar 2024</p>
+                        <p class="exp-desc">Hospital administration software development, KIOSK systems, and healthcare integrations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section alt-bg">
+        <div class="container">
+            <h2>Education</h2>
+
+            <div class="education-list">
+                <div class="edu-item">
+                    <div class="edu-logo">
+                        <img src="https://w3.bilkent.edu.tr/logo/ing-amblem.png" alt="Bilkent University">
+                    </div>
+                    <div class="edu-content">
+                        <h3>M.S. in Computer Science</h3>
+                        <p class="edu-school">Bilkent University, Ankara, Turkey</p>
+                        <p class="edu-date">2025 - Present</p>
+                    </div>
+                </div>
+
+                <div class="edu-item">
+                    <div class="edu-logo">
+                        <img src="https://w3.bilkent.edu.tr/logo/ing-amblem.png" alt="Bilkent University">
+                    </div>
+                    <div class="edu-content">
+                        <h3>B.S. in Computer Science</h3>
+                        <p class="edu-school">Bilkent University, Ankara, Turkey</p>
+                        <p class="edu-date">2020 - 2025</p>
+                        <p class="edu-details">CGPA: 3.7 | High Honor | Full Scholarship | Rank: 20th in Dept, 59th Nationally</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section id="techstack" class="section">
+        <div class="container">
+            <h2>Tech Stack</h2>
+
+            <div class="tech-category">
+                <h3>Languages & Frameworks</h3>
+                <div class="tech-grid">
+                    <div class="tech-item">
+                        <i class="devicon-python-plain colored"></i>
+                        <span>Python</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="devicon-pytorch-original colored"></i>
+                        <span>PyTorch</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="devicon-java-plain colored"></i>
+                        <span>Java</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="devicon-spring-original colored"></i>
+                        <span>Spring Boot</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="devicon-fastapi-plain colored"></i>
+                        <span>FastAPI</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="devicon-django-plain colored"></i>
+                        <span>Django</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="devicon-nodejs-plain colored"></i>
+                        <span>Node.js</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="devicon-react-original colored"></i>
+                        <span>React</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tech-category">
+                <h3>Databases & Cloud</h3>
+                <div class="tech-grid">
+                    <div class="tech-item">
+                        <i class="devicon-postgresql-plain colored"></i>
+                        <span>PostgreSQL</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="devicon-mongodb-plain colored"></i>
+                        <span>MongoDB</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="devicon-redis-plain colored"></i>
+                        <span>Redis</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="devicon-amazonwebservices-plain-wordmark colored"></i>
+                        <span>AWS</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="devicon-googlecloud-plain colored"></i>
+                        <span>GCP</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="devicon-docker-plain colored"></i>
+                        <span>Docker</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="devicon-apachekafka-original colored"></i>
+                        <span>Kafka</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="devicon-neo4j-plain colored"></i>
+                        <span>Neo4j</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tech-category">
+                <h3>Areas of Expertise</h3>
+                <div class="expertise-tags">
+                    <span>Deep Learning</span>
+                    <span>Machine Learning</span>
+                    <span>Bioinformatics</span>
+                    <span>Optimization</span>
+                    <span>Backend Development</span>
+                    <span>Fullstack Development</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section alt-bg">
+        <div class="container">
+            <h2>Contact</h2>
+            <div class="contact-content">
+                <p>Feel free to reach out for research collaborations or opportunities.</p>
+                <div class="contact-info">
+                    <a href="mailto:gencturkmert1@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                        gencturkmert1@gmail.com
+                    </a>
+                    <a href="tel:+905355771544">
+                        <i class="fas fa-phone"></i>
+                        +90 535 577 1544
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Mert Gencturk</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
