@@ -3,17 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mert Gencturk | CS Researcher</title>
+    <title>Mert Gençtürk | CS Researcher</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&family=Source+Serif+Pro:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Mert Gençtürk - Computer Science Researcher at Bilkent University. Research in Deep Learning, Computational Biology, and Bioinformatics.">
+    <meta name="keywords" content="Mert Gençtürk, Mert Gencturk, Computer Science, Deep Learning, Bioinformatics, Bilkent University">
+    <meta property="og:title" content="Mert Gençtürk | CS Researcher">
+    <meta property="og:description" content="M.S. Student at Bilkent University researching deep learning for genomics.">
+    <meta property="og:type" content="website">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <a href="#hero" class="nav-logo">Mert Gencturk</a>
+            <a href="#hero" class="nav-logo">Mert Gençtürk</a>
             <ul class="nav-menu">
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#research" class="nav-link">Research</a></li>
@@ -33,7 +39,7 @@
     <header id="hero" class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>Mert Gencturk</h1>
+                <h1>Mert Gençtürk</h1>
                 <p class="hero-title">Computer Science Researcher</p>
                 <p class="hero-affiliation">
                     <img src="https://w3.bilkent.edu.tr/logo/ing-amblem.png" alt="Bilkent" class="affiliation-logo">
@@ -43,7 +49,7 @@
                 <div class="hero-links">
                     <a href="mailto:mert.gencturk@bilkent.edu.tr"><i class="fas fa-envelope"></i> Email</a>
                     <a href="https://github.com/gencturkmert" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                    <a href="https://scholar.google.com/" target="_blank"><i class="fas fa-graduation-cap"></i> Scholar</a>
+                    <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=Zqb8ykwAAAAJ" target="_blank"><i class="fas fa-graduation-cap"></i> Scholar</a>
                     <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
                 </div>
             </div>
@@ -81,10 +87,14 @@
             <div class="publication">
                 <div class="pub-status">In Submission</div>
                 <h3>ExactCN: Predicting Exact Copy Numbers on Whole Exome Sequencing Data</h3>
-                <p class="pub-authors">Erfan FarhangKia, Ahmet Arda Ceylan, <strong>Mert Gencturk</strong>, Mehmet Alper Yilmaz, Furkan Karademir, A. Ercument Cicek</p>
-                <p class="pub-abstract">
-                    The quantification of the precise copy number variations (CNVs) is crucial to understanding the effects of gene dosage, disease severity, and therapeutic response. Although whole-exome sequencing (WES) offers a cost-effective solution for CNV detection in a clinical setting, it introduces several biases, including those related to sequence length, GC content, and the use of targeting probes. Consequently, estimating exact copy numbers remains challenging, especially for WES data. Here, we present ExactCN, a deep learning–based method for estimation of exact copy numbers from WES data per exon. The architecture integrates convolutional layers that extract local read-depth patterns with transformer encoder blocks that capture genomic context and handle sequencing noise. ExactCN is trained on WES samples from the 1000 Genomes Project, using matching WGS-based calls as semi–ground truth. In benchmarks, ExactCN improves the state-of-the-art integer CNV calling performance by reducing the macro-averaged mean absolute error (MAE) from 0.91 to 0.62 and the macro-averaged root mean squared error (RMSE) from 1.31 to 0.78. It also achieves an overall Pearson correlation of 0.669 and Spearman correlation of 0.550, improving the second-best method by 0.641 and 0.482, respectively. Furthermore, a fine-tuned and specialized version of ExactCN for aggregate CNV detection in clinically important duplicated genes SMN1/2 achieved a macro averaged F1-score of 0.657, and mean absolute error of 0.3. These results substantially improves the state-of-the-art performance and demonstrates the model's applicability to both research and clinical genomic analyses. ExactCN is available at https://github.com/ciceklab/ExactCN.
-                </p>
+                <p class="pub-authors">Erfan FarhangKia, Ahmet Arda Ceylan, <strong>Mert Gençtürk</strong>, Mehmet Alper Yilmaz, Furkan Karademir, A. Ercument Cicek</p>
+                <p class="pub-summary">Deep learning method for estimating exact copy numbers from WES data, achieving significant improvements over state-of-the-art with 32% lower MAE.</p>
+                <details class="pub-abstract-toggle">
+                    <summary><i class="fas fa-chevron-right"></i> Abstract</summary>
+                    <p class="pub-abstract">
+                        The quantification of the precise copy number variations (CNVs) is crucial to understanding the effects of gene dosage, disease severity, and therapeutic response. Although whole-exome sequencing (WES) offers a cost-effective solution for CNV detection in a clinical setting, it introduces several biases, including those related to sequence length, GC content, and the use of targeting probes. Consequently, estimating exact copy numbers remains challenging, especially for WES data. Here, we present ExactCN, a deep learning–based method for estimation of exact copy numbers from WES data per exon. The architecture integrates convolutional layers that extract local read-depth patterns with transformer encoder blocks that capture genomic context and handle sequencing noise. ExactCN is trained on WES samples from the 1000 Genomes Project, using matching WGS-based calls as semi–ground truth. In benchmarks, ExactCN improves the state-of-the-art integer CNV calling performance by reducing the macro-averaged mean absolute error (MAE) from 0.91 to 0.62 and the macro-averaged root mean squared error (RMSE) from 1.31 to 0.78. It also achieves an overall Pearson correlation of 0.669 and Spearman correlation of 0.550, improving the second-best method by 0.641 and 0.482, respectively. Furthermore, a fine-tuned and specialized version of ExactCN for aggregate CNV detection in clinically important duplicated genes SMN1/2 achieved a macro averaged F1-score of 0.657, and mean absolute error of 0.3. These results substantially improves the state-of-the-art performance and demonstrates the model's applicability to both research and clinical genomic analyses.
+                    </p>
+                </details>
                 <div class="pub-links">
                     <a href="https://www.biorxiv.org/content/10.1101/2025.11.24.690086v1" target="_blank"><i class="fas fa-file-alt"></i> bioRxiv</a>
                     <a href="https://github.com/ciceklab/ExactCN" target="_blank"><i class="fab fa-github"></i> Code</a>
@@ -94,10 +104,14 @@
             <div class="publication">
                 <div class="pub-status">In Submission</div>
                 <h3>Bridging Local and Federated Data Normalization in Federated Learning: A Privacy-Preserving Approach</h3>
-                <p class="pub-authors">Melih Cosgun,<strong>Mert Gencturk</strong>,Sinem Sav</p>
-                <p class="pub-abstract">
-                    Data normalization is a crucial preprocessing step for enhancing model performance and training stability. In federated learning (FL), where data remains distributed across multiple parties during collaborative model training, normalization presents unique challenges due to the decentralized and often heterogeneous nature of the data. Traditional methods rely on either independent client-side processing, i.e., local normalization, or normalizing the entire dataset before distributing it to parties, i.e., pooled normalization. Local normalization can be problematic when data distributions across parties are non-IID, while the pooled normalization approach conflicts with the decentralized nature of FL. In this paper, we explore the adaptation of widely used normalization techniques to FL and define the term federated normalization. Federated normalization simulates pooled normalization by enabling the collaborative exchange of normalization parameters among parties. Thus, it achieves performance on par with pooled normalization without compromising data locality. However, sharing normalization parameters such as the mean introduces potential privacy risks, which we further mitigate through a robust privacy-preserving solution. Our contributions include: (i) We systematically evaluate the impact of various federated and local normalization techniques in heterogeneous FL scenarios, (ii) We propose a novel homomorphically encrypted k-th ranked element (and median) calculation tailored for the federated setting, enabling secure and efficient federated normalization, (iii) We propose privacy-preserving implementations of widely used normalization techniques for FL, leveraging multiparty fully homomorphic encryption (MHE).
-                </p>
+                <p class="pub-authors">Melih Cosgun, <strong>Mert Gençtürk</strong>, Sinem Sav</p>
+                <p class="pub-summary">Privacy-preserving federated normalization using homomorphic encryption, achieving pooled normalization performance without data sharing.</p>
+                <details class="pub-abstract-toggle">
+                    <summary><i class="fas fa-chevron-right"></i> Abstract</summary>
+                    <p class="pub-abstract">
+                        Data normalization is a crucial preprocessing step for enhancing model performance and training stability. In federated learning (FL), where data remains distributed across multiple parties during collaborative model training, normalization presents unique challenges due to the decentralized and often heterogeneous nature of the data. Traditional methods rely on either independent client-side processing, i.e., local normalization, or normalizing the entire dataset before distributing it to parties, i.e., pooled normalization. Local normalization can be problematic when data distributions across parties are non-IID, while the pooled normalization approach conflicts with the decentralized nature of FL. In this paper, we explore the adaptation of widely used normalization techniques to FL and define the term federated normalization. Federated normalization simulates pooled normalization by enabling the collaborative exchange of normalization parameters among parties. Thus, it achieves performance on par with pooled normalization without compromising data locality. However, sharing normalization parameters such as the mean introduces potential privacy risks, which we further mitigate through a robust privacy-preserving solution. Our contributions include: (i) We systematically evaluate the impact of various federated and local normalization techniques in heterogeneous FL scenarios, (ii) We propose a novel homomorphically encrypted k-th ranked element (and median) calculation tailored for the federated setting, enabling secure and efficient federated normalization, (iii) We propose privacy-preserving implementations of widely used normalization techniques for FL, leveraging multiparty fully homomorphic encryption (MHE).
+                    </p>
+                </details>
                 <div class="pub-links">
                     <a href="https://arxiv.org/abs/2511.11249" target="_blank"><i class="fas fa-file-alt"></i> arXiv</a>
                 </div>
@@ -308,10 +322,53 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Mert Gencturk</p>
+            <p>&copy; 2025 Mert Gençtürk</p>
         </div>
     </footer>
 
     <script src="script.js"></script>
+
+    <!-- Firebase Visitor Logging -->
+    <script type="module">
+        // Firebase configuration - Replace with your own config from Firebase Console
+        // Go to: Firebase Console > Project Settings > Your apps > Web app > Config
+        const firebaseConfig = {
+            apiKey: "YOUR_API_KEY",
+            authDomain: "YOUR_PROJECT.firebaseapp.com",
+            projectId: "YOUR_PROJECT_ID",
+            storageBucket: "YOUR_PROJECT.appspot.com",
+            messagingSenderId: "YOUR_SENDER_ID",
+            appId: "YOUR_APP_ID"
+        };
+
+        // Only run if Firebase config is set up
+        if (firebaseConfig.apiKey !== "YOUR_API_KEY") {
+            import('https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js').then(({ initializeApp }) => {
+                import('https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js').then(({ getFirestore, collection, addDoc }) => {
+                    const app = initializeApp(firebaseConfig);
+                    const db = getFirestore(app);
+
+                    // Log visitor
+                    const logVisitor = async () => {
+                        try {
+                            await addDoc(collection(db, "visitors"), {
+                                timestamp: new Date().toISOString(),
+                                page: window.location.pathname,
+                                referrer: document.referrer || 'direct',
+                                userAgent: navigator.userAgent,
+                                screenWidth: window.screen.width,
+                                screenHeight: window.screen.height,
+                                language: navigator.language
+                            });
+                        } catch (e) {
+                            console.log('Visitor logging disabled or failed');
+                        }
+                    };
+
+                    logVisitor();
+                });
+            });
+        }
+    </script>
 </body>
 </html>
