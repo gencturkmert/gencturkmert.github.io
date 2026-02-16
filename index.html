@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mert Gençtürk | CS Researcher</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&family=Source+Serif+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- SEO Meta Tags -->
@@ -21,13 +21,13 @@
         <div class="nav-container">
             <a href="#hero" class="nav-logo">Mert Gençtürk</a>
             <ul class="nav-menu">
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#research" class="nav-link">Research</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#techstack" class="nav-link">Tech Stack</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+                <li><a href="#research" class="nav-link" data-section="research">Research</a></li>
+                <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
+                <li><a href="#techstack" class="nav-link" data-section="techstack">Tech Stack</a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
             </ul>
-            <button class="nav-toggle" id="nav-toggle">
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -45,7 +45,9 @@
                     <img src="https://w3.bilkent.edu.tr/logo/ing-amblem.png" alt="Bilkent" class="affiliation-logo">
                     M.S. Student at Bilkent University
                 </p>
-                <p class="hero-focus">Deep Learning | Computational Biology | Bioinformatics | Optimization</p>
+                <p class="hero-focus" id="hero-focus">
+                    <span class="typing-text"></span><span class="typing-cursor"></span>
+                </p>
                 <div class="hero-links">
                     <a href="mailto:mert.gencturk@bilkent.edu.tr"><i class="fas fa-envelope"></i> Email</a>
                     <a href="https://github.com/gencturkmert" target="_blank"><i class="fab fa-github"></i> GitHub</a>
@@ -59,8 +61,8 @@
     <!-- About Section -->
     <section id="about" class="section">
         <div class="container">
-            <h2>About</h2>
-            <div class="about-content">
+            <h2 class="reveal">About</h2>
+            <div class="about-content reveal">
                 <p>
                     I am a Computer Science M.S. student at <strong>Bilkent University</strong>, working as a Graduate Research Assistant
                     at the <a href="http://ciceklab.cs.bilkent.edu.tr/" target="_blank">Cicek Lab</a>. My research focuses on developing
@@ -82,9 +84,9 @@
     <!-- Research Section -->
     <section id="research" class="section alt-bg">
         <div class="container">
-            <h2>Research</h2>
+            <h2 class="reveal">Research</h2>
 
-            <div class="publication">
+            <div class="publication reveal">
                 <div class="pub-status">In Submission</div>
                 <h3>ExactCN: Predicting Exact Copy Numbers on Whole Exome Sequencing Data</h3>
                 <p class="pub-authors">Erfan FarhangKia, Ahmet Arda Ceylan, <strong>Mert Gençtürk</strong>, Mehmet Alper Yilmaz, Furkan Karademir, A. Ercument Cicek</p>
@@ -101,7 +103,7 @@
                 </div>
             </div>
 
-            <div class="publication">
+            <div class="publication reveal">
                 <div class="pub-status">In Submission</div>
                 <h3>Bridging Local and Federated Data Normalization in Federated Learning: A Privacy-Preserving Approach</h3>
                 <p class="pub-authors">Melih Cosgun, <strong>Mert Gençtürk</strong>, Sinem Sav</p>
@@ -122,9 +124,9 @@
     <!-- Experience Section -->
     <section id="experience" class="section">
         <div class="container">
-            <h2>Experience</h2>
+            <h2 class="reveal">Experience</h2>
 
-            <div class="experience-list">
+            <div class="experience-list reveal-stagger reveal">
                 <div class="exp-item">
                     <div class="exp-logo">
                         <img src="https://w3.bilkent.edu.tr/logo/ing-amblem.png" alt="Bilkent University">
@@ -191,9 +193,9 @@
     <!-- Education Section -->
     <section id="education" class="section alt-bg">
         <div class="container">
-            <h2>Education</h2>
+            <h2 class="reveal">Education</h2>
 
-            <div class="education-list">
+            <div class="education-list reveal-stagger reveal">
                 <div class="edu-item">
                     <div class="edu-logo">
                         <img src="https://w3.bilkent.edu.tr/logo/ing-amblem.png" alt="Bilkent University">
@@ -223,11 +225,11 @@
     <!-- Tech Stack Section -->
     <section id="techstack" class="section">
         <div class="container">
-            <h2>Tech Stack</h2>
+            <h2 class="reveal">Tech Stack</h2>
 
-            <div class="tech-category">
+            <div class="tech-category reveal">
                 <h3>Languages & Frameworks</h3>
-                <div class="tech-grid">
+                <div class="tech-grid reveal-stagger">
                     <div class="tech-item">
                         <i class="devicon-python-plain colored"></i>
                         <span>Python</span>
@@ -263,9 +265,9 @@
                 </div>
             </div>
 
-            <div class="tech-category">
+            <div class="tech-category reveal">
                 <h3>Databases & Cloud</h3>
-                <div class="tech-grid">
+                <div class="tech-grid reveal-stagger">
                     <div class="tech-item">
                         <i class="devicon-postgresql-plain colored"></i>
                         <span>PostgreSQL</span>
@@ -306,8 +308,8 @@
     <!-- Contact Section -->
     <section id="contact" class="section alt-bg">
         <div class="container">
-            <h2>Contact</h2>
-            <div class="contact-content">
+            <h2 class="reveal">Contact</h2>
+            <div class="contact-content reveal">
                 <p>Feel free to reach out for research collaborations or opportunities.</p>
                 <div class="contact-info">
                     <a href="mailto:mert.gencturk@bilkent.edu.tr">
@@ -327,48 +329,5 @@
     </footer>
 
     <script src="script.js"></script>
-
-    <!-- Firebase Visitor Logging -->
-    <script type="module">
-        // Firebase configuration - Replace with your own config from Firebase Console
-        // Go to: Firebase Console > Project Settings > Your apps > Web app > Config
-        const firebaseConfig = {
-            apiKey: "YOUR_API_KEY",
-            authDomain: "YOUR_PROJECT.firebaseapp.com",
-            projectId: "YOUR_PROJECT_ID",
-            storageBucket: "YOUR_PROJECT.appspot.com",
-            messagingSenderId: "YOUR_SENDER_ID",
-            appId: "YOUR_APP_ID"
-        };
-
-        // Only run if Firebase config is set up
-        if (firebaseConfig.apiKey !== "YOUR_API_KEY") {
-            import('https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js').then(({ initializeApp }) => {
-                import('https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js').then(({ getFirestore, collection, addDoc }) => {
-                    const app = initializeApp(firebaseConfig);
-                    const db = getFirestore(app);
-
-                    // Log visitor
-                    const logVisitor = async () => {
-                        try {
-                            await addDoc(collection(db, "visitors"), {
-                                timestamp: new Date().toISOString(),
-                                page: window.location.pathname,
-                                referrer: document.referrer || 'direct',
-                                userAgent: navigator.userAgent,
-                                screenWidth: window.screen.width,
-                                screenHeight: window.screen.height,
-                                language: navigator.language
-                            });
-                        } catch (e) {
-                            console.log('Visitor logging disabled or failed');
-                        }
-                    };
-
-                    logVisitor();
-                });
-            });
-        }
-    </script>
 </body>
 </html>
