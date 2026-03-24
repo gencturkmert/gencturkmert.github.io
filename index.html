@@ -88,9 +88,26 @@
 
             <div class="publication reveal">
                 <div class="pub-status">In Submission</div>
+                <h3>CoNVict: An Agentic AI System for Copy Number Variation Prioritization in Rare Disease Diagnosis</h3>
+                <p class="pub-authors"><strong>Mert Gençtürk</strong>, Muti Kara, Furkan Özden</p>
+                <p class="pub-summary">Agentic AI system that prioritizes copy number variants for rare disease diagnosis through verdict classification and tournament-style pairwise ranking, outperforming existing methods in identifying causal CNVs.</p>
+                <details class="pub-abstract-toggle">
+                    <summary><i class="fas fa-chevron-right"></i> Abstract</summary>
+                    <p class="pub-abstract">
+                        Copy number variants (CNVs) are established contributors to rare genetic disorders, yet their clinical interpretation remains challenging in diagnostic genomics. Large CNVs frequently encompass multiple functional regions whose clinical significance can only be resolved in the context of the patients phenotype. Effective prioritization demands variant-level scoring of dosage sensitivity, structural consequences, and disease associations, and systematic comparison of candidates within the same clinical context. Current computational tools only partially address these requirements: they automate variant-level scoring but leave phenotype-guided evidence integration and cross-variant ranking to the clinician, creating a gap between annotation throughput and diagnostic decision-making. Agentic AI systems coordinate large language model-driven reasoning across structured multi-step pipelines and have shown strong performance on biomedical tasks requiring iterative evidence evaluation and contextual judgement, making them well suited to patient-specific variant interpretation where rigid scoring functions fall short. Here, we present CoNVict, a two-stage agentic AI system for patient-specific CNV prioritization. The system ranks CNVs through verdict classification that triages candidates and tournament ranking that performs pairwise comparisons via structured, in-context reasoning. Evaluated on simulated diagnostic cases spanning multiple clinical subspecialties, CoNVict substantially outperforms existing computational methods in identifying the causal CNV and maintains robust performance on variants of uncertain significance and non-coding variants without retraining. Our results demonstrate that agentic AI can bridge the gap between automated variant-level annotation and the patient-specific clinical reasoning required for CNV-driven genetic diagnosis.
+                    </p>
+                </details>
+                <div class="pub-links">
+                    <a href="https://www.medrxiv.org/content/10.64898/2026.03.16.26348493v1" target="_blank"><i class="fas fa-file-alt"></i> medRxiv</a>
+                    <a href="https://github.com/Muti-Kara/CoNVict" target="_blank"><i class="fab fa-github"></i> Code</a>
+                </div>
+            </div>
+
+            <div class="publication reveal">
+                <div class="pub-status">In Submission</div>
                 <h3>ExactCN: Predicting Exact Copy Numbers on Whole Exome Sequencing Data</h3>
                 <p class="pub-authors">Erfan FarhangKia, Ahmet Arda Ceylan, <strong>Mert Gençtürk</strong>, Mehmet Alper Yilmaz, Furkan Karademir, A. Ercument Cicek</p>
-                <p class="pub-summary">Deep learning method for estimating exact copy numbers from WES data, achieving significant improvements over state-of-the-art with 32% lower MAE.</p>
+                <p class="pub-summary">Deep learning method that predicts exact integer copy numbers per exon from whole exome sequencing data, integrating convolutional layers with transformer encoders to handle sequencing biases.</p>
                 <details class="pub-abstract-toggle">
                     <summary><i class="fas fa-chevron-right"></i> Abstract</summary>
                     <p class="pub-abstract">
@@ -135,7 +152,7 @@
                         <h3>Graduate Research Assistant</h3>
                         <p class="exp-company">Bilkent University - Cicek Lab</p>
                         <p class="exp-date">2025 - Present</p>
-                        <p class="exp-desc">Deep learning research for genomic variant detection from whole exome sequencing data.</p>
+                        <p class="exp-desc">Deep learning research for genomic variant detection from whole exome sequencing and single-cell RNA sequencing data, including CNV calling and copy number estimation.</p>
                     </div>
                 </div>
 
@@ -204,6 +221,7 @@
                         <h3>M.S. in Computer Science</h3>
                         <p class="edu-school">Bilkent University, Ankara, Turkey</p>
                         <p class="edu-date">2025 - Present</p>
+                        <p class="edu-details">CGPA: 4.0</p>
                     </div>
                 </div>
 
