@@ -390,6 +390,11 @@ a:hover {
     margin-bottom: 0.75rem;
 }
 
+.pub-status.accepted {
+    color: #16a34a;
+    background: rgba(22, 163, 74, 0.1);
+}
+
 .publication h3 {
     font-family: var(--font-serif);
     font-size: 1.1rem;
