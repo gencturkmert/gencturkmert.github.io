@@ -1,0 +1,10 @@
+
+# Temp scratch for lidya work summary (not part of site)
+.lidya-scan/
+
+# Private CV files (not part of the public site)
+cv*.tex
+cv*.pdf
+cv*.aux
+cv*.log
+cv*.out
