@@ -8,3 +8,6 @@ cv*.pdf
 cv*.aux
 cv*.log
 cv*.out
+
+# Private PhD application prep (not part of the public site)
+phd-applications/
